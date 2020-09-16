@@ -3225,7 +3225,7 @@ _:future,
   color: var(--white);
 }
 #nav a {
-  color: var(--light-grey);
+  color: #de9898;
 }
 #nav a:hover {
   color: var(--white);
