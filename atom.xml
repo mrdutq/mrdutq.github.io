@@ -6,7 +6,7 @@
   <link href="http://mrdutq.gitee.io/atom.xml" rel="self"/>
   
   <link href="http://mrdutq.gitee.io/"/>
-  <updated>2020-09-17T05:49:48.733Z</updated>
+  <updated>2020-09-17T06:01:09.007Z</updated>
   <id>http://mrdutq.gitee.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>操作系统-引论</title>
+    <link href="http://mrdutq.gitee.io/2020/09/17/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F_%E5%BC%95%E8%AE%BA/"/>
+    <id>http://mrdutq.gitee.io/2020/09/17/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F_%E5%BC%95%E8%AE%BA/</id>
+    <published>2020-09-17T06:01:22.996Z</published>
+    <updated>2020-09-17T06:01:09.007Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="操作系统" scheme="http://mrdutq.gitee.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络-概述</title>
+    <link href="http://mrdutq.gitee.io/2020/09/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E6%A6%82%E8%BF%B0/"/>
+    <id>http://mrdutq.gitee.io/2020/09/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E6%A6%82%E8%BF%B0/</id>
+    <published>2020-09-17T05:59:39.149Z</published>
+    <updated>2020-09-17T05:59:24.606Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="计算机网络" scheme="http://mrdutq.gitee.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>机场运营管理_民用航空系统</title>
