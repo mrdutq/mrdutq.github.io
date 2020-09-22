@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>计算机组成原理-第一讲 | Jason's blog</title><meta name="description" content="考核要求期末考试成绩60% 卷面为100分，折合50% 期中考试成绩20% 卷面为100分，折合20% 平时成绩20% 5份实验报告不齐者，平时成绩一律为0！！ 评定参考依据   实验出勤和完成情况，实验报告书写情况；   作业完成情况，上课的出勤情况；   随堂的题目测试情况 参考教材 唐朔飞《计算机组成原理》 第1章-计算机系统概论计算机的分类1、数字计算机(处理数字量信息、按位运算，不连"><meta name="keywords" content="计算机组成原理"><meta name="author" content="Jason"><meta name="copyright" content="Jason"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://mrdutq.gitee.io/2020/08/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E7%AC%AC%E4%B8%80%E8%AE%B2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="计算机组成原理-第一讲"><meta property="og:url" content="http://mrdutq.gitee.io/2020/08/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E7%AC%AC%E4%B8%80%E8%AE%B2/"><meta property="og:site_name" content="Jason's blog"><meta property="og:description" content="考核要求期末考试成绩60% 卷面为100分，折合50% 期中考试成绩20% 卷面为100分，折合20% 平时成绩20% 5份实验报告不齐者，平时成绩一律为0！！ 评定参考依据   实验出勤和完成情况，实验报告书写情况；   作业完成情况，上课的出勤情况；   随堂的题目测试情况 参考教材 唐朔飞《计算机组成原理》 第1章-计算机系统概论计算机的分类1、数字计算机(处理数字量信息、按位运算，不连"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU5.jpg"><meta property="article:published_time" content="2020-08-15T23:58:26.087Z"><meta property="article:modified_time" content="2020-08-16T00:01:29.817Z"><meta name="twitter:card" content="summary"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.0.2',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime: '',
+  date_suffix: {"one_hour":"刚刚","hours":"小时前","day":"天前"},
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+    },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2020-08-16 08:01:29'
+}</script><noscript><style type="text/css">
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+  }
+}
+
+var autoChangeMode = 'false'
+var t = saveToLocal.get('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (saveToLocal.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><meta name="generator" content="Hexo 5.0.2"><link rel="alternate" href="/atom.xml" title="Jason's blog" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">14</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">10</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 图书</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/games/"><i class="fa-fw fas fa-music"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-diamond"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/artitalk/"><i class="fa-fw fa fa-comments-o"></i><span> 说说</span></a></li></ul></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%80%83%E6%A0%B8%E8%A6%81%E6%B1%82"><span class="toc-number">1.</span> <span class="toc-text">考核要求</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC1%E7%AB%A0-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA"><span class="toc-number">2.</span> <span class="toc-text">第1章-计算机系统概论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">2.1.</span> <span class="toc-text">计算机的分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="toc-number">2.2.</span> <span class="toc-text">计算机的性能指标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F"><span class="toc-number">2.3.</span> <span class="toc-text">计算机系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6-Hardware"><span class="toc-number">2.3.1.</span> <span class="toc-text">计算机硬件(Hardware)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA"><span class="toc-number">2.3.1.1.</span> <span class="toc-text">主机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%96%E8%AE%BE"><span class="toc-number">2.3.1.2.</span> <span class="toc-text">外设</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6"><span class="toc-number">2.3.2.</span> <span class="toc-text">计算机软件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%B0%E4%BB%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">2.4.</span> <span class="toc-text">现代计算机的特点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E5%99%A8"><span class="toc-number">2.4.1.</span> <span class="toc-text">运算器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD"><span class="toc-number">2.4.1.1.</span> <span class="toc-text">功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E7%82%B9"><span class="toc-number">2.4.1.2.</span> <span class="toc-text">特点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E5%99%A8"><span class="toc-number">2.4.2.</span> <span class="toc-text">存储器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD-1"><span class="toc-number">2.4.2.1.</span> <span class="toc-text">功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E7%82%B9-1"><span class="toc-number">2.4.2.2.</span> <span class="toc-text">特点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E7%9A%84%E6%80%BB%E9%87%8F%E3%80%82"><span class="toc-number">2.4.3.</span> <span class="toc-text">信息的总量。</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E7%B1%BB"><span class="toc-number">2.4.3.1.</span> <span class="toc-text">分类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E5%99%A8"><span class="toc-number">2.4.4.</span> <span class="toc-text">控制器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD-2"><span class="toc-number">2.4.4.1.</span> <span class="toc-text">功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E4%BB%BB%E5%8A%A1"><span class="toc-number">2.4.4.2.</span> <span class="toc-text">主要任务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E4%BB%A4%E7%9A%84%E5%BD%A2%E5%BC%8F"><span class="toc-number">2.4.4.3.</span> <span class="toc-text">指令的形式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E5%99%A8%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%91%A8%E6%9C%9F"><span class="toc-number">2.4.4.4.</span> <span class="toc-text">控制器工作的周期</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E4%BB%A4%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%A7%E8%A1%8C%E7%9A%84%E6%8E%A7%E5%88%B6%E9%83%A8%E4%BB%B6%EF%BC%9A%E6%8C%87%E4%BB%A4%E8%AE%A1%E6%95%B0%E5%99%A8"><span class="toc-number">2.4.4.5.</span> <span class="toc-text">指令按顺序执行的控制部件：指令计数器</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%82%E9%85%8D%E5%99%A8%E4%B8%8E%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87"><span class="toc-number">2.4.5.</span> <span class="toc-text">适配器与输入输出设备</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E8%AE%BE%E5%A4%87"><span class="toc-number">2.4.5.1.</span> <span class="toc-text">输入设备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87"><span class="toc-number">2.4.5.2.</span> <span class="toc-text">输出设备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%82%E9%85%8D%E5%99%A8"><span class="toc-number">2.4.5.3.</span> <span class="toc-text">适配器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E6%80%BB%E7%BA%BF"><span class="toc-number">2.4.5.4.</span> <span class="toc-text">系统总线</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC2%E7%AB%A0-%E8%BF%90%E7%AE%97%E5%99%A8"><span class="toc-number">3.</span> <span class="toc-text">第2章-运算器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC3%E7%AB%A0-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F"><span class="toc-number">4.</span> <span class="toc-text">第3章-存储系统</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC4%E3%80%815%E7%AB%A0-%E6%8E%A7%E5%88%B6%E5%99%A8"><span class="toc-number">5.</span> <span class="toc-text">第4、5章-控制器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC6%E7%AB%A0-%E6%80%BB%E7%BA%BF"><span class="toc-number">6.</span> <span class="toc-text">第6章-总线</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC7%E7%AB%A0-%E5%A4%96%E8%AE%BE"><span class="toc-number">7.</span> <span class="toc-text">第7章-外设</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC8%E7%AB%A0-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%8E%A5%E5%8F%A3"><span class="toc-number">8.</span> <span class="toc-text">第8章-输入输出接口</span></a></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU5.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Jason's blog</a></span><span id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 图书</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/games/"><i class="fa-fw fas fa-music"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-diamond"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/artitalk/"><i class="fa-fw fa fa-comments-o"></i><span> 说说</span></a></li></ul></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">计算机组成原理-第一讲</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-15T23:58:26.087Z" title="发表于 2020-08-16 07:58:26">2020-08-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-16T00:01:29.817Z" title="更新于 2020-08-16 08:01:29">2020-08-16</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><a id="more"></a>
+
+<h1 id="考核要求"><a href="#考核要求" class="headerlink" title="考核要求"></a>考核要求</h1><pre><code>期末考试成绩60%
+卷面为100分，折合50%
+期中考试成绩20%
+卷面为100分，折合20%
+平时成绩20%
+5份实验报告不齐者，平时成绩一律为0！！
+评定参考依据
+  实验出勤和完成情况，实验报告书写情况；
+  作业完成情况，上课的出勤情况；
+  随堂的题目测试情况</code></pre>
+<p>参考教材<br> 唐朔飞《计算机组成原理》</p>
+<h1 id="第1章-计算机系统概论"><a href="#第1章-计算机系统概论" class="headerlink" title="第1章-计算机系统概论"></a>第1章-计算机系统概论</h1><h2 id="计算机的分类"><a href="#计算机的分类" class="headerlink" title="计算机的分类"></a>计算机的分类</h2><pre><code>1、数字计算机(处理数字量信息、按位运算，不连续地跳动计算)
+
+2、专用计算机(针对某一任务设计的最有效、最经济和在最快速的计算机，但适应性很差)
+
+3、通用计算机(适应性强，但是牺牲了效率、速度和经济性)
+    单片机
+    微型机
+    小型机
+    中型机
+    大型机
+
+4、超级计算机
+    (体积、功能、数据存储量、指令系统、价格由低到高)
+    (简易性由高到低)
+
+5、模拟计算机(处理模拟量信息，数值连续、运算过程连续)</code></pre>
+<p>第一代计算机(1945年-1958年)</p>
+<pre><code>图灵。
+采用电子管
+    ENIAC的特点:十进制表示、程序用插线开关实现
+    冯·诺伊曼，提出用二进制表达方式和存储程序控制计算机构想。
+    描述计算机模型EDVAC(Electronic Discrete VAriable Automatic Computer)</code></pre>
+<p>第二代计算机(1958-1964)</p>
+<pre><code>晶体管</code></pre>
+<p>第三代计算机</p>
+<pre><code>集成电路--&gt;微处理器</code></pre>
+<p>第四代计算机</p>
+<p><strong>摩尔定律</strong>: 每18个月，集成电路的性能将提高一倍，而其价格将降低一半(另一种表述方法:每过10年计算机系统性能将会增加100倍，通讯带宽也会提高100倍，而其花费的资金不会增加)</p>
+<p>Intel cpu的发展史是从Intel 4004起步的(DIP封装)<br>Intel 80286是Intel最后一块16位CPU(PGA封装)<br>Intel 80386是Intel第一代32位CPU(PGA封装)</p>
+<h2 id="计算机的性能指标"><a href="#计算机的性能指标" class="headerlink" title="计算机的性能指标"></a>计算机的性能指标</h2><p>  1、<em>吞吐量</em></p>
+<pre><code>表征一台计算机在某一时间间隔内能够处理的信息量</code></pre>
+<p>  2、<em>响应时间</em></p>
+<pre><code>从输入有效到系统产生响应之间的时间度量，用时间单位来表示</code></pre>
+<p>  3、<strong>利用率</strong></p>
+<pre><code>在给定的时间间隔内，系统被实际使用的时间所占的比率，用百分比表示</code></pre>
+<p>  4、<strong>处理字节长(机器字长)</strong></p>
+<pre><code>处理及运算器中一次能够完成二进制运算的位数，如32位、64位
+    机器字长与系统数据总线宽度具有一定的相关性。</code></pre>
+<p>  5、<em>总线宽度</em></p>
+<pre><code>一般指运算器与存储器之间的数据总线宽度。</code></pre>
+<p>  6、<strong>主存储器容量</strong></p>
+<pre><code>主存储器所能存储二进制数据的位数(主存储器中所有存储元的总数目，而非存储单元)
+
+通常用KB、MB、GB、TB来表示。K=2的10次方，M=2的20次方，G=2的30次方，T=2的40次方，B=8位(一个字节)
+存储器容量越大，记忆的二进制数越多。
+存储容量越大，能存储的信息就越多。
+    1K=1024B,1MB=1024KB，1GB=1024MB，1TB=1024GB</code></pre>
+<p>  7、<strong>主存储器带宽</strong></p>
+<pre><code>单位时间内从主存储器读出的二进制信息量，一般用字节数/秒表示</code></pre>
+<p>  8、<strong>主频/时钟周期</strong></p>
+<pre><code>CPU的工作节拍受主时钟控制，主时钟不断产生固定频率的时钟，主时钟的频率(f)叫CPU的主频。度量单位是MHz、GHz(和时间相关时1M=10^3K、1G=10^3K)
+    主频的倒数称为cpu的时钟周期(T)，即T=1/f，度量单位是微秒、纳秒。</code></pre>
+<p>  9、CPU执行时间(CPU执行一般程序所占用的cpu时间)</p>
+<pre><code>cpu执行时间=程序的总时钟周期数*cpu时钟周期</code></pre>
+<p>  10、<strong>CPI(Cycle Per Indtruvtion)</strong></p>
+<p>   <em>执行一条指令所需的平均时钟周期数</em></p>
+<pre><code>平均cpi=某程序总的cpu时钟周期数/该程序包含的指令条数</code></pre>
+<p>  11、<strong>MPIS(Million Instruction executrd Per Second)</strong></p>
+<p>  <em>每秒百万指令数，即单位时间内执行的指令数；</em></p>
+<pre><code>MIPS=指令数/程序执行时间</code></pre>
+<p>  12、<strong>FLOPS(Floating-point Operatuins Per Second)</strong></p>
+<p>  <em>每秒百万次(10^6)浮点操作数，衡量机器浮点操作的性能。</em></p>
+<p>  13、其他的性能指标</p>
+<pre><code>主存储器的读写速度
+    IO的数据传送率
+    带宽的均衡性
+    ...</code></pre>
+<h2 id="计算机系统"><a href="#计算机系统" class="headerlink" title="计算机系统"></a>计算机系统</h2><h3 id="计算机硬件-Hardware"><a href="#计算机硬件-Hardware" class="headerlink" title="计算机硬件(Hardware)"></a>计算机硬件(Hardware)</h3><pre><code>    是指构成计算机的所有实体部件的集合，通常这些部件由电路(电子元件)、机械等物理部件组成。
+    指可触摸得到的物理设备实体。</code></pre>
+<h4 id="主机"><a href="#主机" class="headerlink" title="主机"></a>主机</h4><pre><code>  主存，I/O接口
+        CPU，系统总线
+            运算器
+            控制器
+            内部寄存器组</code></pre>
+<h4 id="外设"><a href="#外设" class="headerlink" title="外设"></a>外设</h4><pre><code>  辅存
+        I/O设备</code></pre>
+<h3 id="计算机软件"><a href="#计算机软件" class="headerlink" title="计算机软件"></a>计算机软件</h3><pre><code>系统软件
+        操作系统
+        语言处理程序
+        诊断程序
+        各种标准程序库
+应用软件</code></pre>
+<h2 id="现代计算机的特点"><a href="#现代计算机的特点" class="headerlink" title="现代计算机的特点"></a>现代计算机的特点</h2><p>  将运算器、控制器和片内高速缓存，统称为<strong>cpu</strong>；而将cpu、主存储器、输入/输出接口和系统总线统称为<strong>主机</strong>；<br>    其余的设备均为<strong>外设</strong>。</p>
+<p>  主机内包含主存储器，即内存。硬盘、光盘等辅助存储器属于<strong>I/O设备</strong><br>    以存储器为中心，减轻cpu的数据传送负担，提高系统的整体性能。</p>
+<h3 id="运算器"><a href="#运算器" class="headerlink" title="运算器"></a>运算器</h3><h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><pre><code>    处理所有的算数及逻辑运算。通常称为ALU(算数逻辑单元)</code></pre>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><pre><code>    采用二进制数据进行运算；
+    运算器一次可以处理的数据位数称为机器字长；
+    机器字长一般为8、16、32、64位，机器字长直接决定着运算的精度和能力；</code></pre>
+<h3 id="存储器"><a href="#存储器" class="headerlink" title="存储器"></a>存储器</h3><h4 id="功能-1"><a href="#功能-1" class="headerlink" title="功能"></a>功能</h4><pre><code>    保存所有的程序和数据</code></pre>
+<h4 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h4><pre><code>    以二进制形式保存程序和数据
+    存储器是按存储单元组织的，读写存储单元必须给出单元地址；</code></pre>
+<p>  <strong>存储元</strong>：用于保存一位0/1二进制数据的物理器件；</p>
+<p>  <strong>存储单元</strong>：能够保存一个字数据的器件，由若干个存储元构成；</p>
+<p>  <strong>单元地址</strong>：能区分每一个存储单元的编号，一般从0开始编号；</p>
+<p>  <strong>存储容量</strong>：一个存储器所能保存的二进制。</p>
+<h3 id="信息的总量。"><a href="#信息的总量。" class="headerlink" title="信息的总量。"></a>信息的总量。</h3><h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><p>  <em>外存(辅助存储器)</em></p>
+<pre><code>        磁盘存储器、光盘存储器
+        cpu不可直接访问</code></pre>
+<p>   <em>内存(主存储器)</em></p>
+<pre><code>        半导体存储器
+        cpu直接访问，存放当前系统运行所需的所有的程序和数据</code></pre>
+<p><em>两个与贮存相关的寄存器</em></p>
+<pre><code>    MAR(存储器地址寄存器)：接收由cpu送来的地址信息
+    MDR(存储器数据寄存器)：作为外界与存储器之间的数据通路</code></pre>
+<h3 id="控制器"><a href="#控制器" class="headerlink" title="控制器"></a>控制器</h3><h4 id="功能-2"><a href="#功能-2" class="headerlink" title="功能"></a>功能</h4><pre><code>根据索要执行指令的功能，按顺序发出各种控制命令，协调计算机各个部件的工作。</code></pre>
+<h4 id="主要任务"><a href="#主要任务" class="headerlink" title="主要任务"></a>主要任务</h4><pre><code>解释并执行指令
+    控制指令的执行顺序；
+    负责指令执行过程中。操作数的寻址；
+    根据指令的执行，协调相关部件的工作
+        如：运算类指令执行时对标志寄存器的影响设置</code></pre>
+<h4 id="指令的形式"><a href="#指令的形式" class="headerlink" title="指令的形式"></a>指令的形式</h4><pre><code>    操作码：指出指令所进行的操作，如加、减、数据传送等；
+    地址码：支出进行以上操作的数据存放位置。</code></pre>
+<h4 id="控制器工作的周期"><a href="#控制器工作的周期" class="headerlink" title="控制器工作的周期"></a>控制器工作的周期</h4><pre><code>    取指周期：取指令的一段时间
+    执行周期：执行指令的一段时间</code></pre>
+<h4 id="指令按顺序执行的控制部件：指令计数器"><a href="#指令按顺序执行的控制部件：指令计数器" class="headerlink" title="指令按顺序执行的控制部件：指令计数器"></a>指令按顺序执行的控制部件：指令计数器</h4><pre><code>    每取出一条指令，指令计数器就加1
+    遇到转移类指令，控制器根据所执行指令设置指令计数器的值</code></pre>
+<p>数据字：该字代表要处理的数据</p>
+<p>指令字：该字为一条指令；</p>
+<p>指令流：取指周期中，从内存读出的信息流</p>
+<p>数据流：执行周期中，从内存读出的信息流</p>
+<h3 id="适配器与输入输出设备"><a href="#适配器与输入输出设备" class="headerlink" title="适配器与输入输出设备"></a>适配器与输入输出设备</h3><h4 id="输入设备"><a href="#输入设备" class="headerlink" title="输入设备"></a>输入设备</h4><pre><code>    将人们熟悉的某种信息形式变换为机器内部所能接收和识别的二进制信息形式的而设备</code></pre>
+<h4 id="输出设备"><a href="#输出设备" class="headerlink" title="输出设备"></a>输出设备</h4><pre><code>    把计算机的处理结果变成人或其他机器设备所能接收和识别的信息形式的设备</code></pre>
+<h4 id="适配器"><a href="#适配器" class="headerlink" title="适配器"></a>适配器</h4><pre><code>    保证外围设备用计算机系统特性要求的形式发送或接收信息</code></pre>
+<h4 id="系统总线"><a href="#系统总线" class="headerlink" title="系统总线"></a>系统总线</h4><pre><code>    构成计算机系统的骨架，是多个系统部件之间进行数据传送的公共通路。</code></pre>
+<h1 id="第2章-运算器"><a href="#第2章-运算器" class="headerlink" title="第2章-运算器"></a>第2章-运算器</h1><h1 id="第3章-存储系统"><a href="#第3章-存储系统" class="headerlink" title="第3章-存储系统"></a>第3章-存储系统</h1><pre><code>    高速缓存
+    主存储器</code></pre>
+<h1 id="第4、5章-控制器"><a href="#第4、5章-控制器" class="headerlink" title="第4、5章-控制器"></a>第4、5章-控制器</h1><h1 id="第6章-总线"><a href="#第6章-总线" class="headerlink" title="第6章-总线"></a>第6章-总线</h1><h1 id="第7章-外设"><a href="#第7章-外设" class="headerlink" title="第7章-外设"></a>第7章-外设</h1><pre><code>    外存设备
+    输入设备
+    输出设备</code></pre>
+<h1 id="第8章-输入输出接口"><a href="#第8章-输入输出接口" class="headerlink" title="第8章-输入输出接口"></a>第8章-输入输出接口</h1><p>​    </p>
+<p>​    </p>
+</div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU5.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/08/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E6%B5%AE%E7%82%B9%E6%95%B0/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU4.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">计算机组成原理-浮点数</div></div></a></div><div class="next-post pull-right"><a href="/2020/08/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E7%AC%AC%E4%BA%8C%E7%AB%A0/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU7.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">计算机组成原理-第二章</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020/08/16/计算机组成原理-浮点数/" title="计算机组成原理-浮点数"><img class="cover" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU4.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-08-16</div><div class="title">计算机组成原理-浮点数</div></div></a></div><div><a href="/2020/08/16/计算机组成原理-第二章/" title="计算机组成原理-第二章"><img class="cover" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU7.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-08-16</div><div class="title">计算机组成原理-第二章</div></div></a></div></div></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Jason</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
