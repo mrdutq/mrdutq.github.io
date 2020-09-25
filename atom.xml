@@ -6,7 +6,7 @@
   <link href="http://mrdutq.gitee.io/atom.xml" rel="self"/>
   
   <link href="http://mrdutq.gitee.io/"/>
-  <updated>2020-09-22T13:31:32.085Z</updated>
+  <updated>2020-09-25T15:55:10.291Z</updated>
   <id>http://mrdutq.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaWeb-Tomcat</title>
+    <link href="http://mrdutq.gitee.io/2020/09/25/JavaWeb-Tomcat/"/>
+    <id>http://mrdutq.gitee.io/2020/09/25/JavaWeb-Tomcat/</id>
+    <published>2020-09-25T15:02:30.865Z</published>
+    <updated>2020-09-25T15:55:10.291Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaWeb" scheme="http://mrdutq.gitee.io/categories/JavaWeb/"/>
+    
+    
+    <category term="JavaWeb" scheme="http://mrdutq.gitee.io/tags/JavaWeb/"/>
+    
+    <category term="Tomcat" scheme="http://mrdutq.gitee.io/tags/Tomcat/"/>
+    
+  </entry>
   
   <entry>
     <title>机场运营管理-机场系统</title>
