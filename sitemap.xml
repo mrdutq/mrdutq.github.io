@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://mrdutq.gitee.io/2020/10/29/C#-%E5%A7%94%E6%89%98%E8%AF%A6%E8%A7%A3/</loc>
+    <loc>http://mrdutq.gitee.io/2020/10/29/Csharp-%E5%A7%94%E6%89%98%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2020-10-29</lastmod>
     
@@ -263,14 +263,14 @@
   </url>
   
   <url>
-    <loc>http://mrdutq.gitee.io/tags/HTML/</loc>
+    <loc>http://mrdutq.gitee.io/tags/Tomcat/</loc>
     <lastmod>2020-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://mrdutq.gitee.io/tags/Tomcat/</loc>
+    <loc>http://mrdutq.gitee.io/tags/HTML/</loc>
     <lastmod>2020-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -347,6 +347,13 @@
   </url>
   
   <url>
+    <loc>http://mrdutq.gitee.io/tags/%E8%88%AA%E7%A9%BA%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2020-10-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://mrdutq.gitee.io/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-10-29</lastmod>
     <changefreq>daily</changefreq>
@@ -355,13 +362,6 @@
   
   <url>
     <loc>http://mrdutq.gitee.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
-    <lastmod>2020-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://mrdutq.gitee.io/tags/%E8%88%AA%E7%A9%BA%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2020-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
