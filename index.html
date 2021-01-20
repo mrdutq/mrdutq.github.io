@@ -1,0 +1,448 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jason's blog</title><meta name="description" content="不积跬步，无以至千里"><meta name="author" content="Jason"><meta name="copyright" content="Jason"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://mrdutq.gitee.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="Jason's blog"><meta property="og:url" content="http://mrdutq.gitee.io/"><meta property="og:site_name" content="Jason's blog"><meta property="og:description" content="不积跬步，无以至千里"><meta property="og:image" content="http://mrdutq.gitee.io/img/avatar.png"><meta property="article:published_time" content="2021-01-20T12:03:50.594Z"><meta property="article:modified_time" content="2021-01-20T12:03:50.594Z"><meta name="twitter:card" content="summary"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.0.2',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime: '',
+  date_suffix: {"one_hour":"刚刚","hours":"小时前","day":"天前"},
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+    },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2021-01-20 20:03:50'
+}</script><noscript><style type="text/css">
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+  }
+}
+
+var autoChangeMode = 'false'
+var t = saveToLocal.get('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (saveToLocal.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><meta name="generator" content="Hexo 5.0.2"><link rel="alternate" href="/atom.xml" title="Jason's blog" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">37</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">24</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">11</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 图书</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/games/"><i class="fa-fw fas fa-game"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-diamond"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/artitalk/"><i class="fa-fw fa fa-comments-o"></i><span> 说说</span></a></li></ul></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><header class="full_page" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU1.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Jason's blog</a></span><span id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 图书</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/games/"><i class="fa-fw fas fa-game"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-diamond"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/artitalk/"><i class="fa-fw fa fa-comments-o"></i><span> 说说</span></a></li></ul></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">Jason's blog</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/mrdutq" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:781357011@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/" title="操作系统-文件管理">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="操作系统-文件管理"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/" title="操作系统-文件管理">操作系统-文件管理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-01-18T10:06:05.360Z" title="发表于 2021-01-18 18:06:05">2021-01-18</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="content">第七章：文件管理数据项基本数据项组合数据项记录记录是一组相关数据项的集合，用于描述一个对象在某个方面的属性文件文件类型文件长度文件的物理位置文件的建立时间文件操作创建文件删除文件读文件写文件设置文件读写的位置文件的逻辑结构顺序文件记录寻址索引文件索引顺序文件直接文件和哈希文件文件目录文件控制块（FCB）
+文件名+inode(属性)
+
+简单的文件目录
+单级文件目录
+查找慢
+不允许重名
+不便于实现文件共享
+
+
+两级文件目录
+提高检索速度，从M*N到M+N
+
+
+
+树形结构目录
+路径名
+“..”是父目录
+“/”是根目录
+区别绝对路径和相对路径（../…/…/1/2/3/）
+
+
+
+文件共享有向无循环图（DAG）利用符号链接实现文件共享
+实际上就是“快捷方式”
+
+文件保护
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/" title="操作系统-输入输出系统">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="操作系统-输入输出系统"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/" title="操作系统-输入输出系统">操作系统-输入输出系统</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-01-18T10:03:20.687Z" title="发表于 2021-01-18 18:03:20">2021-01-18</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="content">第六章：输入输出系统I/O系统的功能，模型和接口I/O系统管理的对象是I/O设备和相应的设备控制器。I/O系统的基本功能
+隐藏物理设备的细节
+与设备的无关性
+提高处理机和I/O设备的利用率
+对I/O设备进行控制
+确保对设备的正确共享
+错误处理
+
+I/O软件的层次结构
+用户层I/O软件
+设备独立性软件
+设备驱动程序（厂家开发）
+中断处理程序
+硬件
+
+I/O系统的分层
+中断处理程序
+设备驱动程序
+设备独立性软件
+
+I/O系统接口
+块设备接口
+指以数据块为单位来组织和传送数据信息的设备
+典型的块设备是磁盘、光盘
+块设备的基本特征
+①传输速率较高，通常每秒钟为几兆位；
+②它是可寻址的，即可随机地读/写任意一块；
+③磁盘设备的I/O采用DMA方式。
+
+
+
+
+流设备接口
+又称字符设备指以单个字符为单位来传送数据信息的设备
+这类设备一般用于数据的输入和输出，有交互式终端、打印机
+字符设备的基本特征
+①传输速率较低；
+②不可寻址，即不能指定输入时的源地址或输出时的目标地址；
+③字符设备的I/O常采用中断驱动方式。
+
+
+
+
+网络通信接口
+提供网络接入功能，使计算机能通过网络与其他计算机进行通信或上网浏览 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8%E5%99%A8/" title="操作系统-虚拟存储器">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="操作系统-虚拟存储器"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8%E5%99%A8/" title="操作系统-虚拟存储器">操作系统-虚拟存储器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-01-18T10:01:46.552Z" title="发表于 2021-01-18 18:01:46">2021-01-18</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="content">第五章：虚拟存储器常规存储管理方式的特征一次性驻留性局部性原理程序在执行时将呈现出局部性特征，即在一较短的时间内，程序的执行仅局限于某个部分，相应地，它所访问的存储空间也局限于某个区域时间局限性
+如果程序中的某条指令一旦执行， 则不久以后该指令可能再次执行；如果某数据被访问过， 则不久以后该数据可能再次被访问。产生时间局限性的典型原因，是由于在程序中存在着大量的循环操作
+
+空间局限性
+一旦程序访问了某个存储单元，在不久之后，其附近的存储单元也将被访问，即程序在一段时间内所访问的地址，可能集中在一定的范围之内，其典型情况便是程序的顺序执行。
+
+定义指具有请求调入功能和置换功能，能从逻辑上对内存容量加以扩充的一种存储器系统优点大程序：可在较小的可用内存中执行较大的用户程序；大的用户空间：提供给用户可用的虚拟内存空间通常大于物理内存(real memory)并发：可在内存中容纳更多程序并发执行；易于开发：不必影响编程时的程序结构以CPU时间和外存空间换取昂贵内存空间，这是操作系统中的资源转换技术特征离散性
+指在内存分配时采用离散的分配方式，它是虚拟存储器的实现的基础
+
+多次性
+指一个作业被分 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%AD%98%E5%82%A8%E5%99%A8%E7%AE%A1%E7%90%86/" title="操作系统-存储器管理">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="操作系统-存储器管理"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%AD%98%E5%82%A8%E5%99%A8%E7%AE%A1%E7%90%86/" title="操作系统-存储器管理">操作系统-存储器管理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-01-18T09:57:45.756Z" title="发表于 2021-01-18 17:57:45">2021-01-18</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="content">第四章:存储器管理存储器的层次结构多层结构的存储系统
+存储器的多层结构
+CPU寄存器
+主存
+辅存
+
+
+可执行存储器
+寄存器和主存的总称
+访问速度快，进程可以在很少的时钟周期内用一条load或store指令完成存取。
+
+
+
+主存储器与寄存器高速缓存和磁盘缓存程序的装入和链接步骤
+编译
+源程序 -&gt;目标模块（Object modules）——–Compiler
+由编译程序对用户源程序进行编译，形成若干个目标模块
+
+
+
+
+链接
+一组目标模块 -&gt;装入模块 （Load Module）———-Linker
+由链接程序将编译后形成的一组目标模板以及它们所需要的库函数链接在一起，形成一个完整的装入模块
+
+
+
+
+装入
+装入模块 -&gt;内存  ——–Loader
+由装入程序将装入模块装入内存
+
+
+
+
+
+程序的装入
+绝对装入方式
+在编译时，如果知道程序将驻留在内存中指定的位置。编译程序将产生绝对地址的目标代码。
+
+
+可重定位装入方式
+在可执行文件中，列出各个需要重定位的地址单元和相对地址值。当用户程序被装入内存时，一次性实现逻辑地址到物理地址的转换，以后不再转换(一般在装入内存时由软件完成 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/" title="操作系统-处理机调度与死锁">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU11.JPG" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="操作系统-处理机调度与死锁"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/" title="操作系统-处理机调度与死锁">操作系统-处理机调度与死锁</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-01-18T09:53:42.338Z" title="发表于 2021-01-18 17:53:42">2021-01-18</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="content">第三章:处理机调度与死锁处理机调度算法的目标处理机调度算法的共同目标
+资源利用率:CPU的利用率=CPU有效工作时间/(CPU有效工作时间+CPU空闲等待时间)
+公平性
+平衡性
+策略强制执行
+
+批处理系统的目标
+平均周转时间短
+系统吞吐量高
+处理机利用率高
+
+分时系统的目标
+响应时间快
+均衡性
+
+实时系统目标
+截止时间的保证
+可预测性
+
+处理机调度的层次
+高级调度（作业调度）
+分时系统无需作业调度，因为需要交互
+批处理系统需要作业调度
+
+
+中级调度（和挂起有关）
+低级调度（进程调度）
+进程调度是最基本的调度，任何操作系统都有进程调度。
+低级调度的三个基本机制
+排队器
+分派器
+上下文切换
+
+
+进程调度方式
+非抢占方式
+抢占方式
+优先权原则
+短进程优先原则
+时间片原则
+
+
+
+
+进程调度的任务
+保存处理机的现场信息
+按某种算法选取进程
+把处理器分配给进程
+
+
+进程调度的算法
+优先级调度算法
+优先级调度算法的类型
+非抢占式优先级调度算法
+等当前进程执行完以后，再执行另一个优先权最高的进程
+这种调度算法主要用于批处理系统中；也可用于某些对实时性要求不严的实时系统中。 
+
+
+抢占式优先级调度算法
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/01/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%BA%94%E7%94%A8%E5%B1%82/" title="计算机网络-应用层">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="计算机网络-应用层"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%BA%94%E7%94%A8%E5%B1%82/" title="计算机网络-应用层">计算机网络-应用层</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-01-18T09:31:55.967Z" title="发表于 2021-01-18 17:31:55">2021-01-18</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a></span></div><div class="content">第 6 章  应用层域名系统 DNS域名系统概述
+DNS 是一个分布式数据库，提供了主机名和 IP 地址之间相互转换的服务。这里的分布式数据库是指，每个站点只保留它自己的那部分数据。
+
+因特网的域名结构
+域名具有层次结构，从上到下依次为：根域名、顶级域名、二级域名。
+
+域名服务器
+一个服务器所负责管辖的（或有权限的）范围叫做区(zone)。
+每一个区设置相应的权限域名服务器，用来保存该区中的所有主机的域名到IP地址的映射。
+
+DNS 可以使用 UDP 或者 TCP 进行传输，使用的端口号都为 53。大多数情况下 DNS 使用 UDP 进行传输，这就要求域名解析器和域名服务器都必须自己处理超时和重传从而保证可靠性。在两种情况下会使用 TCP 进行传输：
+如果返回的响应超过的 512 字节（UDP 最大只支持 512 字节的数据）。
+区域传送（区域传送是主域名服务器向辅助域名服务器传送变化的那部分数据）。
+
+
+
+文件传送协议FTP 概述
+文件传送协议 FTP (File Transfer Protocol) 是因特网上使用得最广泛的文件传送协议。
+FTP 提供交互式的访问，允许客户指明文件 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/01/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%BF%90%E8%BE%93%E5%B1%82/" title="计算机网络-运输层">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU10.JPG" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="计算机网络-运输层"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%BF%90%E8%BE%93%E5%B1%82/" title="计算机网络-运输层">计算机网络-运输层</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-01-18T09:25:01.858Z" title="发表于 2021-01-18 17:25:01">2021-01-18</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a></span></div><div class="content">第 5 章  运输层运输层协议概述进程之间的通信
+运输层向它上面的应用层提供通信服务，它属于面向通信部分的最高层，同时也是用户功能中的最低层。
+两个主机进行通信实际上就是两个主机中的应用进程互相通信。
+应用进程之间的通信又称为端到端的通信。
+运输层协议和网络层协议的主要区别
+
+运输层的两个主要协议
+(1) 用户数据报协议 UDP(User Datagram Protocol)
+UDP 传送的数据单位协议是 UDP 报文或用户数据报。
+
+
+(2) 传输控制协议 TCP(Transmission Control Protocol)
+TCP 传送的数据单位协议是 TCP 报文段(segment)
+
+
+
+运输层的端口
+软件端口与硬件端口
+在协议栈层间的抽象的协议端口是软件端口。
+路由器或交换机上的端口是硬件端口。
+
+
+三类端口
+熟知端口，数值一般为 0~1023。
+登记端口号，数值为1024~49151，为没有熟知端口号的应用程序使用的。使用这个范围的端口号必须在 IANA 登记，以防止重复。
+客户端口号或短暂端口号，数值为49152~65535，留给客户进程选择暂时使用。当服务器进程收到客户 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/12/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%BD%91%E7%BB%9C%E5%B1%82/" title="计算机网络-网络层">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="计算机网络-网络层"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/12/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%BD%91%E7%BB%9C%E5%B1%82/" title="计算机网络-网络层">计算机网络-网络层</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-07T05:29:11.635Z" title="发表于 2020-12-07 13:29:11">2020-12-07</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a></span></div><div class="content">第 4 章  网络层网络层提供的两种服务虚电路服务数据报服务概要: 虚电路服务与数据报服务的对比网际协议 IP网际协议 IP 是 TCP/IP 体系中两个最主要的协议之一。与 IP 协议配套使用的还有四个协议：
+地址解析协议 ARP (Address Resolution Protocol)
+逆地址解析协议 RARP   (Reverse Address Resolution Protocol)
+网际控制报文协议 ICMP   (Internet Control Message Protocol)
+网际组管理协议 IGMP   (Internet Group Management Protocol)
+概要: 示意图
+
+虚拟互连网络
+网络互相连接起来要使用一些中间设备
+物理层中继系统：转发器(repeater)。
+数据链路层中继系统：网桥或桥接器(bridge)。
+网络层中继系统：路由器(router)。
+网桥和路由器的混合物：桥路器(brouter)。
+网络层以上的中继系统：网关(gateway)。  
+
+
+
+IP 数据报的格式
+版本 : 有 4（IPv4）和 6（IPv6）两个值；
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/29/Csharp-%E5%A7%94%E6%89%98%E8%AF%A6%E8%A7%A3/" title="C#-委托详解">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C#-委托详解"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/29/Csharp-%E5%A7%94%E6%89%98%E8%AF%A6%E8%A7%A3/" title="C#-委托详解">C#-委托详解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-29T09:25:24.063Z" title="发表于 2020-10-29 17:25:24">2020-10-29</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/C/">C#</a></span></div><div class="content">C#委托详解
+2020年10月29日，这部分学了挺长时间，感觉听懂了，还是要多练。
+视频教程、笔记内容来源：刘铁猛_C#入门详解_委托详解
+
+什么是委托
+委托(delegate)是函数指针的“升级版”
+
+事例：C/C++中的函数指针
+
+
+一切皆地址
+
+变量(数据)是以某个地址为起点的一段内存中所存储的值
+函数(算法)是以某个地址为起点的一段内存中所存储的一组机器语言指令
+
+
+直接调用与间接调用
+
+直接调用：通过函数名来调用函数，CPU通过函数名直接获得函数所在地址并开始执行–&gt;返回
+间接调用：通过函数指针来调用函数，CPU通过读取函数指针存储的值获得函数所在地址并开始执行–&gt;返回
+
+
+Java中没有与委托相对应的功能实体
+
+C#由Java发展而来，但是C#通过委托这种数据类型保留了与C/C++函数指针相对应的功能
+
+
+委托的简单使用
+
+Action委托
+123456789101112131415161718192021222324252627282930313233namespace DelegateExample1&#123;    class Program    &# ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/25/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80-%E7%A8%8B%E5%BA%8F/" title="汇编语言_程序">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU11.JPG" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="汇编语言_程序"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/25/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80-%E7%A8%8B%E5%BA%8F/" title="汇编语言_程序">汇编语言_程序</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-25T15:08:11.707Z" title="发表于 2020-10-25 23:08:11">2020-10-25</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/">汇编语言</a></span></div><div class="content">程序一个源程序从写出到执行的过程
+编写
+编译连接
+使用汇编语言编译程序（MASM.EXE）对源程序文件中的源程序进行编译，产生目标文件(.obj)
+再用连接程序（LINK.EXE）对目标文件进行连接，生成可在操作系统中直接运行的可执行文件(.exe)。
+
+
+执行（可执行文件）
+程序（从原程序中的汇编指令翻译过来的机器码）和数据（源程序中定义的数据）。
+相关的描述信息（如：程序有多大、要占多少内存空间等）
+
+
+
+源程序
+汇编指令
+伪指令
+没有对应的机器码的指令，最终不被CPU所执行
+伪指令由编译器来执行的指令，编译器根据伪指令来进行相关的编译工作。
+segment和ends是一对成对使用的伪指令，这是在写可被编译器编译的汇编程序时，必须要用到的一对伪指令。
+segment和ends的功能是定义一个段，segment说明一个段的开始，ends说明一个段的结束。
+一个段必须有一个名称来标识，使用格式为：
+段名 segment
+段名 ends
+
+
+一个汇编程序由多个段组成，这些段被用来存放代码、数据或当作栈空间来使用。
+一个有意义的汇编程序中至少要有一个段，这个段用来存放代码。
+
+
+end是一 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Jason</div><div class="author-info__description">不积跬步，无以至千里</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length_num">37</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length_num">24</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length_num">11</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/mrdutq"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/mrdutq" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:781357011@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="sticky_layout"><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/" title="操作系统-文件管理"><img src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="操作系统-文件管理"/></a><div class="content"><a class="title" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/" title="操作系统-文件管理">操作系统-文件管理</a><time datetime="2021-01-18T10:06:05.360Z" title="发表于 2021-01-18 18:06:05">2021-01-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/" title="操作系统-输入输出系统"><img src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="操作系统-输入输出系统"/></a><div class="content"><a class="title" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/" title="操作系统-输入输出系统">操作系统-输入输出系统</a><time datetime="2021-01-18T10:03:20.687Z" title="发表于 2021-01-18 18:03:20">2021-01-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8%E5%99%A8/" title="操作系统-虚拟存储器"><img src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="操作系统-虚拟存储器"/></a><div class="content"><a class="title" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8%E5%99%A8/" title="操作系统-虚拟存储器">操作系统-虚拟存储器</a><time datetime="2021-01-18T10:01:46.552Z" title="发表于 2021-01-18 18:01:46">2021-01-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%AD%98%E5%82%A8%E5%99%A8%E7%AE%A1%E7%90%86/" title="操作系统-存储器管理"><img src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="操作系统-存储器管理"/></a><div class="content"><a class="title" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%AD%98%E5%82%A8%E5%99%A8%E7%AE%A1%E7%90%86/" title="操作系统-存储器管理">操作系统-存储器管理</a><time datetime="2021-01-18T09:57:45.756Z" title="发表于 2021-01-18 17:57:45">2021-01-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/" title="操作系统-处理机调度与死锁"><img src="https://cdn.jsdelivr.net/gh/mrdutq/cdn/images/IU11.JPG" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="操作系统-处理机调度与死锁"/></a><div class="content"><a class="title" href="/2021/01/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/" title="操作系统-处理机调度与死锁">操作系统-处理机调度与死锁</a><time datetime="2021-01-18T09:53:42.338Z" title="发表于 2021-01-18 17:53:42">2021-01-18</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C/"><span class="card-category-list-name">C#</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JavaWeb/"><span class="card-category-list-name">JavaWeb</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/"><span class="card-category-list-name">java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%88%86%E4%BA%AB/"><span class="card-category-list-name">分享</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"><span class="card-category-list-name">操作系统</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"><span class="card-category-list-name">数据结构</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%9C%BA%E5%9C%BA%E8%BF%90%E8%90%A5%E7%AE%A1%E7%90%86/"><span class="card-category-list-name">机场运营管理</span><span class="card-category-list-count">5</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/"><span class="card-category-list-name">汇编语言</span><span class="card-category-list-count">4</span></a></li>
+            <li class="card-category-list-item more is-center"><a class="card-category-list-link-more" href="/categories/">
+                <span>查看更多</span><i class="fas fa-angle-right"></i></a></li>
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/C/" style="font-size: 1.1em; color: #999">C#</a> <a href="/tags/HTML/" style="font-size: 1.1em; color: #999">HTML</a> <a href="/tags/Java/" style="font-size: 1.1em; color: #999">Java</a> <a href="/tags/JavaWeb/" style="font-size: 1.17em; color: #999c9f">JavaWeb</a> <a href="/tags/Tomcat/" style="font-size: 1.1em; color: #999">Tomcat</a> <a href="/tags/printf/" style="font-size: 1.1em; color: #999">printf</a> <a href="/tags/%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/" style="font-size: 1.1em; color: #999">处理机调度与死锁</a> <a href="/tags/%E5%AD%98%E5%82%A8%E5%99%A8%E7%AE%A1%E7%90%86/" style="font-size: 1.1em; color: #999">存储器管理</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/" style="font-size: 1.1em; color: #999">学习网站</a> <a href="/tags/%E5%BC%95%E8%AE%BA/" style="font-size: 1.1em; color: #999">引论</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.5em; color: #99a9bf">操作系统</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 1.17em; color: #999c9f">数据结构</a> <a href="/tags/%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/" style="font-size: 1.1em; color: #999">文件管理</a> <a href="/tags/%E6%9C%BA%E5%9C%BA%E7%B3%BB%E7%BB%9F/" style="font-size: 1.1em; color: #999">机场系统</a> <a href="/tags/%E6%9C%BA%E5%9C%BA%E8%BF%90%E8%90%A5%E7%AE%A1%E7%90%86/" style="font-size: 1.37em; color: #99a4b2">机场运营管理</a> <a href="/tags/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" style="font-size: 1.3em; color: #99a1ac">汇编语言</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">算法</a> <a href="/tags/%E8%88%AA%E7%A9%BA%E7%AE%A1%E7%90%86/" style="font-size: 1.1em; color: #999">航空管理</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8%E5%99%A8/" style="font-size: 1.1em; color: #999">虚拟存储器</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" style="font-size: 1.23em; color: #999ea6">计算机组成原理</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.43em; color: #99a6b9">计算机网络</a> <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" style="font-size: 1.23em; color: #999ea6">软件工程</a> <a href="/tags/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/" style="font-size: 1.1em; color: #999">输入输出系统</a> <a href="/tags/%E8%BF%9B%E7%A8%8B/" style="font-size: 1.1em; color: #999">进程</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/01/"><span class="card-archive-list-date">一月 2021</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">10</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">11</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">37</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-01-20T12:03:50.387Z"></div></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Jason</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    var typed = new Typed("#subtitle", {
+      strings: "有志者事竟成".split(","),
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '有'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') subtitleType()
+  else $.getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js', subtitleType)
+} else {
+  subtitleType()
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
