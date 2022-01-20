@@ -1,4 +1,4 @@
-var passwords = ['Blog&Jason'];
+var passwords = ['Blog|Jason'];
 var indexOld;
 var index = Math.floor((Math.random() * passwords.length));
 var password = passwords[index];
